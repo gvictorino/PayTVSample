@@ -2,13 +2,13 @@ package com.victorino.paytvsample.version
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.victorino.version.domain.VersionContract
+import com.victorino.version.domain.VersionContracts
 
-class VersionControllerFactory(private val versionContract: VersionContract) :
+class VersionControllerFactory(private val getVersion: VersionContracts.GetVersion) :
     ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return VersionController(
-                versionContract
+                getVersion
             ) as T
         }
 }
