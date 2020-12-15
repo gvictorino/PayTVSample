@@ -1,9 +1,10 @@
-package com.victorino.paytvsample
+package com.victorino.paytvsample.version
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.victorino.paytvsample.R
 import kotlinx.android.synthetic.main.activity_version.*
 import java.lang.ref.WeakReference
 

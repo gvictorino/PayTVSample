@@ -1,4 +1,4 @@
-package com.victorino.paytvsample
+package com.victorino.paytvsample.version
 
 import android.app.Activity
 import com.victorino.paytvsample.PayTVSampleConstants.APP_IDENTIFIER
@@ -17,7 +17,9 @@ class VersionInjection(private val activity: WeakReference<Activity>) {
                     )
             )
             val versionContract = VersionUseCase(versionRepositoryImpl, APP_IDENTIFIER)
-            return VersionControllerFactory(versionContract)
+            return VersionControllerFactory(
+                versionContract
+            )
         } ?: throw NullPointerException("Fragment is null")
     }
 }

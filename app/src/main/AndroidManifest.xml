@@ -11,7 +11,7 @@
         android:theme="@style/Theme.PayTVSample">
 
         <activity
-            android:name=".VersionActivity"
+            android:name=".version.VersionActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="behind">

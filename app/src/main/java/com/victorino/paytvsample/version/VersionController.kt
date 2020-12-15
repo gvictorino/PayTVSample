@@ -1,4 +1,4 @@
-package com.victorino.paytvsample
+package com.victorino.paytvsample.version
 
 import androidx.lifecycle.ViewModel
 import com.victorino.version.domain.VersionContract
